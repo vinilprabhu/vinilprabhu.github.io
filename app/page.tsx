@@ -21,7 +21,7 @@ const projects = [
   {
     title: 'Digital Menu',
     description:
-      'SaaS platform for restaurants to digitize menus and manage orders in real-time using WebSocket technology.',
+      'SaaS platform for restaurants to digitize menu and manage orders in real-time using WebSocket technology.',
     image: '/dish_menu.png',
     tags: ['React', 'Node.js', 'Socket.io'],
   },
