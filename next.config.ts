@@ -1,11 +1,11 @@
 import type { NextConfig } from "next";
 
-const repoName = process.env.NODE_ENV === "production" ? "/vinilprabhu_next" : "";
+const basePath = process.env.NODE_ENV === "production" ? process.env.PAGES_BASE_PATH || "" : "";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "",
-  assetPrefix: repoName,
+  basePath,
+  assetPrefix: basePath,
   trailingSlash: true,
   images: {
     unoptimized: true,
